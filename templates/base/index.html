@@ -1,0 +1,152 @@
+{% extends "wrapper.html" %}
+
+{% block css %}
+
+{{ block.super }}
+
+{% endblock css %}
+
+{% block main %}
+
+<!--start: Wrapper-->
+    <div id="wrapper">
+
+        <!--start: Container -->
+        <div class="container">
+
+            <!-- start: Slider -->
+            <div class="slider-wrapper">
+
+                <div id="da-slider" class="da-slider">
+                    <div class="da-slide">
+                        <h2>Title</h2>
+                        <p>Social Computing, Behavioral Modeling and Prediction Conference</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img" style="margin-left: -150px"><img src="{{ STATIC_URL }}img/mapa.png" alt="image03" /></div>
+                    </div>
+                    <div class="da-slide">
+                        <h2>Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <a href="#" class="da-link">Read more</a>
+                        <div class="da-img" style="margin-left: -100px"><img src="{{ STATIC_URL }}img/mapa.png" alt="image04" /></div>
+                    </div>
+                    <nav class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </nav>
+                </div>
+
+            </div>
+            <!-- end: Slider -->
+
+            <hr class="clean">
+
+            <!-- start: Row -->
+            <div class="row">
+
+                <div class="span3">
+                    <div class="box">
+                        <i class="fa-icon-bullhorn"></i>
+                        <h3>Call for Proposals</h3>
+                        <p>
+                            SBP is a multidisciplinary conference with a selective single paper track and poster session. SBP also invites a small number of high quality tutorials and nationally recognized keynote speakers.
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="span3">
+                    <div class="box">
+                        <i class="fa-icon-download"></i>
+                        <h3>Downloads</h3>
+                        <p>
+                            SBP offers some resources for download. See more <a href="#">information</a> on the download page.
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="span3">
+                    <div class="box">
+                        <i class="fa-icon-comments-alt"></i>
+                        <h3>RoundTables</h3>
+                        <p>
+                            The purpose of the cross-fertilization roundtables is to help participants become better acquainted with people outside of their discipline and with whom they might consider partnering on a future SBP project. <a href="#">More Info</a>
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="span3">
+                    <div class="box">
+                        <i class="fa-icon-star-empty"></i>
+                        <h3>Data Challenges</h3>
+                        <p>
+                            We organize this challenge to encourage researchers to combine the power of big data and the power of systems thinking in the field of social computing, behavioral-cultural modeling, and prediction.
+                        </p>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end: Row -->
+
+
+            <hr class="clean">
+
+            <!-- start: Row -->
+            <div class="row">
+
+                <div class="span8">
+                    <div class="title-out"><h3>About Us</h3></div>
+                    <p><i>The 2013 International Conference on Social Computing, Behavioral-Cultural Modeling, and Prediction (SBP)</i> is a multidisciplinary conference with a selective single paper track and poster session.  SBP also invites  a small number of high quality tutorials and nationally recognized keynote speakers. </p>
+                    <p>The SBP conference provides a forum for researchers and practitioners from academia, industry, and government agencies to exchange ideas on current challenges in social computing, behavioral modeling and prediction, and on state-of-the-art methods and best practices being adopted to tackle these challenges. Interactive events at the conference are designed to promote cross-disciplinary contact.</p>
+                    <p><b>Social Computing</b> harnesses the power of computational methods to study social behavior within a social context. <b>Behavioral Cultural  modeling</b> refers to representing behavior and culture in the abstract, and is a convenient and powerful way to conduct virtual experiments and scenario analysis. Both social computing and behavioralcultural  modeling are techniques designed to achieve a better understanding of complex behaviors, patterns, and associated outcomes of interest. Moreover, these approaches are inherently interdisciplinary; subsystems and system components exist at multiple levels of analysis (i.e., "cells to societies") and across multiple disciplines, from engineering and the computational sciences to the social and health sciences. </p>
+                </div>
+
+                <div class="span4">
+                    <div class="title-out"><h3>Placeholder</h3></div>
+                    <div class="flex-video widescreen">
+                        <iframe src="http://player.vimeo.com/video/6686768?title=0&byline=0&portrait=0" width="1500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end: Row -->
+
+            <hr class="clean">
+
+            <!-- start: Row -->
+            <div class="row">
+
+                <div class="span12">
+                    <div class="contact">Tagline here</div>
+                </div>
+
+            </div>
+            <!-- end: Row -->
+
+            <hr class="clean">
+
+            <div class="title-out"><h3>Sponsors</h3></div>
+
+            <!-- start Clients List -->
+            <div class="clients-carousel">
+
+                <ul class="slides clients">
+                    <li><img src="http://sbp2013.org/images/springer-lncs.png" alt=""/></li>
+
+                </ul>
+
+            </div>
+            <!-- end Clients List -->
+
+            <hr class="clean">
+
+        </div>
+        <!--end: Container-->
+
+    </div>
+    <!-- end: Wrapper  -->
+
+{% endblock main %}
