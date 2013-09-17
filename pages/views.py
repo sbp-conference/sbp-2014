@@ -17,7 +17,7 @@ def about(request, **kwargs):
     return render_to_response("base/page.html", context, RequestContext(request))
 
 def cfp(request, **kwargs):
-    context = { 'page_title': 'Call for Proposals',
+    context = { 'page_title': 'Call for Papers',
                 'name': 'home',
                 'fonts': ''}
     return render_to_response("base/cfp.html", context, RequestContext(request))
