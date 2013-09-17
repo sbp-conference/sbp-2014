@@ -10,12 +10,14 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'pages.views.home', name='home'),
-    url(r'^about/$', 'pages.views.home', name='home'),
+    url(r'^about/$', 'pages.views.about', name='about'),
     url(r'^challenge/$', 'pages.views.home', name='home'),
     url(r'^downloads/$', 'pages.views.home', name='home'),
     url(r'^keynote/$', 'pages.views.home', name='home'),
     url(r'^program/$', 'pages.views.home', name='home'),
     url(r'^tutorial/$', 'pages.views.home', name='home'),
+    url(r'^cfp/$', 'pages.views.cfp', name='home'),
+    url(r'^committee/$', 'pages.views.committee', name='committee'),
     # url(r'^sbp2014/', include('sbp2014.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

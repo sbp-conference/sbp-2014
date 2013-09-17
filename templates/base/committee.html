@@ -1,4 +1,12 @@
+{% extends "wrapper.html" %}
 
+{% block css %}
+
+{{ block.super }}
+
+{% endblock css %}
+
+{% block main %}
             <hr class="clean">
 
             <!-- start: Row -->
@@ -14,13 +22,14 @@
                         <div class="span3">
 
                             <div class="picture">
-                                <a href="img/car.jpg" rel="image" title="mobile app">
-                                    <img src="img/car.jpg" >
+                                <a href="{{ STATIC_URL }}img/blank.jpg" rel="image" title="mobile app">
+                                    <img src="{{ STATIC_URL }}img/blank.jpg" >
                                     <div class="image-overlay-zoom"></div>
                                 </a>
                                 <div class="item-description">
-                                    <h4><a href="#">Mobile App</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                    <h4><a href="#">CONFERENCE CHAIR</a></h4>
+                                    <p>Claudio Cioffi-Revilla <br />
+                                        George Mason University</p>
                                 </div>
                             </div>
 
@@ -31,13 +40,13 @@
                         <div class="span3">
 
                             <div class="picture">
-                                <a href="project.html">
-                                    <img src="img/web_app1.jpg">
+                                <a href="/">
+                                    <img src="{{ STATIC_URL }}img/blank.jpg">
                                     <div class="image-overlay-link"></div>
                                 </a>
                                 <div class="item-description">
-                                    <h4><a href="#">Mobile App</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                    <h4><a href="#">PROGRAM CHAIR</a></h4>
+                                    <p>William Kennedy<br />George Mason University</p>
                                 </div>
                             </div>
 
@@ -48,18 +57,54 @@
                         <div class="span3">
 
                             <div class="picture">
-                                <a href="img/mobile_app1.jpg" rel="image" title="mobile app">
-                                    <img src="img/mobile_app1.jpg">
+                                <a href="{{ STATIC_URL }}img/mobile_app1.jpg" rel="image" title="mobile app">
+                                    <img src="{{ STATIC_URL }}img/blank.jpg">
                                     <div class="image-overlay-zoom"></div>
                                 </a>
                                 <div class="item-description">
-                                    <h4><a href="#">Mobile App</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                    <h4><a href="#">PROGRAM CHAIR</a></h4>
+                                    <p>
+                                        Nitin Agarwal<br />University of Arkansas<br /></p>
                                 </div>
                             </div>
 
                         </div>
 
+                        <hr class="visible-phone">
+
+                        <div class="span3">
+
+                            <div class="picture">
+                                <a href="{{ STATIC_URL }}img/blank.jpg" rel="image" title="mobile app">
+                                    <img src="{{ STATIC_URL }}img/blank.jpg">
+                                    <div class="image-overlay-zoom"></div>
+                                </a>
+                                <div class="item-description">
+                                    <h4><a href="#">PROGRAM CHAIR</a></h4>
+                                    <p>
+                                        Shanchieh (Jay) Yang<br />Rochester Institute of Technology<br /></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr class="visible-phone">
+
+                        <div class="span3">
+
+                            <div class="picture">
+                                <a href="{{ STATIC_URL }}img/blank.jpg" rel="image" title="mobile app">
+                                    <img src="{{ STATIC_URL }}img/blank.jpg">
+                                    <div class="image-overlay-zoom"></div>
+                                </a>
+                                <div class="item-description">
+                                    <h4><a href="#">WEB CHAIR</a></h4>
+                                    <p>
+                                        Katherine Chuang<br />&nbsp;</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <!-- end: Row -->
 
@@ -71,14 +116,14 @@
 
                     <!-- start: List Style -->
 
-                    <div class="title-out"><h3>Why redBox?</h3></div>
+                    <div class="title-out"><h3>Committee</h3></div>
                     <ul class="check_list">
-                        <li>Fully responsive so your content will always look good on any screen size</li>
-                        <li>Awesome sliders give you the opportunity to showcase important content</li>
+                        <li>The conference was made possible by the generous time and effort that these folks have contributed.</li>
+                        <!--li>Awesome sliders give you the opportunity to showcase important content</li>
                         <li>Tested on iPhone and iPad with Retina Display</li>
                         <li>Multiple layout options for home pages, portfolio section & blog section</li>
                         <li>We offer free support because we care about your site as much as you do.</li>
-                        <li>Over 400 Icons .</li>
+                        <li>Over 400 Icons .</li-->
                     </ul>
                     <!-- end: List Style -->
 
@@ -86,3 +131,5 @@
 
             </div>
             <!-- end: Row -->
+
+{% endblock main %}
