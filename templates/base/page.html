@@ -15,7 +15,7 @@
             <!-- start: Container -->
             <div class="container">
 
-                <h2>{{ page_title }}</h2>
+                <h2>{{ page_title|title }}</h2>
 
             </div>
             <!-- end: Container  -->
@@ -38,36 +38,9 @@
 
                     <!-- start: About Us -->
                     <div id="about">
-                        <div class="title"><h3>Our Story</h3></div>
-                        <p>
-                            <i>The 2013 International Conference on Social Computing, Behavioral-Cultural Modeling, and Prediction (SBP)</i> is a multidisciplinary conference with a selective single paper track and poster session.  SBP also invites  a small number of high quality tutorials and nationally recognized keynote speakers.
-                        </p>
-                        <p>
-                            The SBP conference provides a forum for researchers and practitioners from academia, industry, and government agencies to exchange ideas on current challenges in social computing, behavioral modeling and prediction, and on state-of-the-art methods and best practices being adopted to tackle these challenges. Interactive events at the conference are designed to promote cross-disciplinary contact.
-                        </p>
-                        <p>
-                            <b>Social Computing</b> harnesses the power of computational methods to study social behavior within a social context. <b>Behavioral Cultural  modeling</b> refers to representing behavior and culture in the abstract, and is a convenient and powerful way to conduct virtual experiments and scenario analysis. Both social computing and behavioralcultural  modeling are techniques designed to achieve a better understanding of complex behaviors, patterns, and associated outcomes of interest. Moreover, these approaches are inherently interdisciplinary; subsystems and system components exist at multiple levels of analysis (i.e., "cells to societies") and across multiple disciplines, from engineering and the computational sciences to the social and health sciences.
-                        </p>
+                        {{ page_contents|safe|linebreaks }}
                     </div>
                     <!-- end: About Us -->
-
-                    <!-- start: History -->
-                    <!--div id="history">
-                        <div class="title"><h3>History</h3></div>
-                        <p>
-                            <span class="dropcap">P</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                        </p>
-                        <p>
-                            <span class="dropcap color">P</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                        </p>
-                        <p>
-                            <span class="dropcap dark">P</span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                        </p>
-                    </div>
-                    <!-- end: History -->
 
                 </div>
 
@@ -76,87 +49,13 @@
                     <!-- start: Sidebar -->
                     <div id="sidebar">
 
-                        <!-- start: Skills -->
-                        <!--div class="title"><h3>Our Skills</h3></div>
-                        <ul class="progress-bar">
-                            <li>
-                                <h5>Web Design ( 40% )</h5>
-                                <div class="meter"><span style="width: 120px;"></span></div><!-- Edite width here --
-                            </li>
-                            <li>
-                                <h5>Wordpress ( 80% )</h5>
-                                <div class="meter"><span style="width: 240px;"></span></div><!-- Edite width here --
-                            </li>
-                            <li>
-                                <h5>Branding ( 100% )</h5>
-                                <div class="meter"><span style="width: 300px;"></span></div><!-- Edite width here --
-                            </li>
-                            <li>
-                                <h5>SEO Optmization ( 60% )</h5>
-                                <div class="meter"><span style="width: 180px;"></span></div><!-- Edite width here --
-                            </li>
-                        </ul>
-                        <!-- end: Skills -->
+                        <hr class="clean">
+
+
 
                         <hr class="clean">
 
-                        <!-- start: Tabs --
-                        <ul class="tabs-nav">
-                            <li class="active"><a href="#tab1"><i class="mini-ico-glass"></i> Tab 1</a></li>
-                            <li><a href="#tab2"><i class="mini-ico-list"></i> Tab 2</a></li>
-                            <li><a href="#tab3"><i class="mini-ico-pencil"></i> Tab 3</a></li>
-                        </ul>
 
-                        <div class="tabs-container">
-                            <div class="tab-content" id="tab1" style="display: block;">1. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                            <div class="tab-content" id="tab2" style="display: none;">2. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                            <div class="tab-content" id="tab3" style="display: none;">3. Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                        </div>
-                        <!-- end: Tabs -->
-
-                        <hr class="clean">
-
-                        <!-- start: Testimonials--
-
-                        <div class="testimonial-container">
-
-                            <div class="title-out"><h3>Testimonials</h3></div>
-
-                                <div class="testimonials-carousel" data-autorotate="3000" role="application" style="overflow: hidden; width: 100%;" aria-live="polite"> <a href="#carousel-1-0" class="mr-rotato-next"></a> <a href="#carousel-1-0" class="mr-rotato-prev"></a>
-
-                                    <ul class="carousel" id="carousel-1-0" aria-activedescendant="carousel-1-0-slide2" style="margin-left: -200%; float: left; width: 400%; -webkit-transition: margin-left 0.3s ease; transition: margin-left 0.3s ease;">
-
-                                        <li class="testimonial" role="tabpanel document" id="carousel-1-0-slide0" aria-hidden="true" style="float: left; width: 25%;">
-                                            <div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                                            <div class="testimonials-bg"></div>
-                                            <div class="testimonials-author">Lucas Luck, <span>CEO</span></div>
-                                        </li>
-
-                                        <li class="testimonial" role="tabpanel document" id="carousel-1-0-slide1" aria-hidden="true" style="float: left; width: 25%;">
-                                            <div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                                            <div class="testimonials-bg"></div>
-                                            <div class="testimonials-author">Lucas Luck, <span>CTO</span></div>
-                                        </li>
-
-                                        <li class="testimonial mr-rotato-active-slide" role="tabpanel document" id="carousel-1-0-slide2" aria-hidden="false" style="float: left; width: 25%;">
-                                            <div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                                            <div class="testimonials-bg"></div>
-                                            <div class="testimonials-author">Lucas Luck, <span>COO</span></div>
-                                        </li>
-
-                                        <li class="testimonial" role="tabpanel document" id="carousel-1-0-slide3" aria-hidden="true" style="float: left; width: 25%;">
-                                            <div class="testimonials">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
-                                            <div class="testimonials-bg"></div>
-                                            <div class="testimonials-author">Lucas Luck, <span>CMO</span></div>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                        <!-- end: Testimonials-->
 
                     </div>
                     <!-- end: Sidebar -->
@@ -172,13 +71,13 @@
 
             <hr class="clean">
 
-            <div class="title-out"><h3>Sponsors</h3></div>
+            <!-- <div class="title-out"><h3>Sponsors</h3></div> -->
 
             <!-- start Clients List -->
             <div class="clients-carousel">
 
                 <ul class="slides clients">
-                    <li><img src="http://sbp2013.org/images/springer-lncs.png" alt=""/></li>
+                    <li><img src="" alt=""/></li>
 
                 </ul>
 
