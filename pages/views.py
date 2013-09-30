@@ -39,5 +39,6 @@ def tbd(request, **kwargs):
 
     context = { 'page_title': page_title,
                 'page_contents': stringoftext,
+                'sidebar': sidebar,
                 'fonts': ''}
     return render_to_response("base/page.html", context, RequestContext(request))
