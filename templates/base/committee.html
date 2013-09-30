@@ -7,18 +7,50 @@
 {% endblock css %}
 
 {% block main %}
-    <hr class="clean">
+<!-- start: Page Title -->
+<div id="page-title">
+
+        <div id="page-title-inner">
+
+            <!-- start: Container -->
+            <div class="container">
+
+                <h2>{{ page_title|title }}</h2>
+
+            </div>
+            <!-- end: Container  -->
+
+        </div>
+
+    </div>
+<!-- end: Page Title -->
+
+
+<!--start: Wrapper-->
+    <div id="wrapper">
+
+        <!--start: Container -->
+        <div class="container">
+
+            <div class="row">
+
+<hr class="clean">
 
     <!-- start: Row -->
     <div class="row">
 
-        <div class="span9">
+        <div class="span12">
 
-            <div class="title-out"><h3>Committee Members</h3></div>
+                <div id="Committee">
+                    <p>
+                        The conference was made possible by the generous time and effort that these folks have contributed.
+                    </p>
+                </div>
+
 
             <!-- start: Row -->
             <div class="row">
-                The conference was made possible by the generous time and effort that these folks have contributed.
+
                 <div class="span3">
 
                     <div class="picture">
@@ -107,6 +139,69 @@
             <!-- end: Row -->
 
         </div>
+
+
+<hr class="clean">
+<!-- PAGE TEMPLATE -->
+
+                <div class="span8">
+
+                    <!-- start: About Us -->
+                    <div id="about">
+                        {{ page_contents|safe|linebreaks }}
+                    </div>
+                    <!-- end: About Us -->
+
+                </div>
+
+                <div class="span4">
+
+                    <!-- start: Sidebar -->
+                    <div id="sidebar">
+
+                        <hr class="clean">
+
+
+
+                        <hr class="clean">
+
+
+
+                    </div>
+                    <!-- end: Sidebar -->
+
+                </div>
+
+            </div>
+
+            <hr class="clean">
+
+            <!-- end: Row -->
+
+
+            <hr class="clean">
+
+            <!-- <div class="title-out"><h3>Sponsors</h3></div> -->
+
+            <!-- start Clients List -->
+            <div class="clients-carousel">
+
+                <ul class="slides clients">
+                    <li><img src="" alt=""/></li>
+
+                </ul>
+
+            </div>
+            <!-- end Clients List -->
+
+            <hr class="clean">
+
+        </div>
+        <!--end: Container-->
+
+    </div>
+    <!-- end: Wrapper  -->
+
 
 
     </div>
